@@ -7,5 +7,6 @@
         public string? Text { get; set; }
         public Reviewer? Reviewer { get; set; }
         public Game? Game { get; set; }
+        public int Rating { get; set; }
     }
 }

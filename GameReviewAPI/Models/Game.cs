@@ -7,7 +7,7 @@
         public string? Company { get; set; }
         public DateTime ReleaseDate { get; set; }
         public ICollection<Review>? Reviews { get; set; }
-        public ICollection<GamePlayer>? GamePlayers { get; set; }
+        public ICollection<GameCompany>? GameCompanies { get; set; }
         public ICollection<GameCategory>? GameCategories { get; set; }
     }
 }

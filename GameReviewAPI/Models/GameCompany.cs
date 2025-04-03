@@ -1,10 +1,10 @@
 ﻿namespace GameReviewAPI.Models
 {
-    public class GamePlayer
+    public class GameCompany
     {
         public int GameId { get; set; }
-        public int PlayerId { get; set; }
+        public int CompanyId { get; set; }
         public Game? Game { get; set; }
-        public Player? Player { get; set; }
+        public Company? Company { get; set; }
     }
 }
