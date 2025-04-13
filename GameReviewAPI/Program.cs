@@ -1,5 +1,7 @@
 
 using GameReviewAPI.Data;
+using GameReviewAPI.Interfaces;
+using GameReviewAPI.Repository;
 using Microsoft.EntityFrameworkCore;
 
 namespace GameReviewAPI
@@ -13,7 +15,8 @@ namespace GameReviewAPI
             // Add services to the container.
 
             builder.Services.AddControllers();
-            builder.Services.AddTransient<Seed>();
+            builder.Services.AddTransient<Seed>();  
+            builder.Services.AddScoped<IGameRepository, GameRepository>();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
